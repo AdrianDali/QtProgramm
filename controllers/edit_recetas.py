@@ -79,6 +79,154 @@ class MainWindowForm(QWidget, MainWindow):
         self.timeEdit_9.setTime(QTime(int(hour_07[0]), int(hour_07[1])))
         #####
 
+        self.nombre_line_edit_62.setText(str(proceso[0][31]))
+        self.doubleSpinBox_20.setValue(proceso[0][32])
+        self.doubleSpinBox_21.setValue(proceso[0][33])
+        self.doubleSpinBox_22.setValue(proceso[0][34])
+        self.doubleSpinBox_24.setValue(proceso[0][35])
+        self.doubleSpinBox_23.setValue(proceso[0][36])
+
+        hour_08 = self.get_hour(proceso[0][37])
+        self.timeEdit_24.setTime(QTime(int(hour_08[0]), int(hour_08[1])))
+
+        hour_09 = self.get_minute(proceso[0][38])
+        self.timeEdit_23.setTime(QTime(int(hour_09[0]), int(hour_09[1])))
+
+        #########
+        self.doubleSpinBox_25.setValue(proceso[0][39])
+        self.doubleSpinBox_26.setValue(proceso[0][40])
+
+        hour_10 = self.get_minute(proceso[0][41])
+        self.timeEdit_10.setTime(QTime(int(hour_10[0]), int(hour_10[1])))
+
+        self.doubleSpinBox_27.setValue(proceso[0][42])
+
+        hour_11 = self.get_minute(proceso[0][43])
+        self.timeEdit_11.setTime(QTime(int(hour_11[0]), int(hour_11[1])))
+
+        self.nombre_line_edit_75.setText(str(proceso[0][44]))
+
+        ##############
+        self.doubleSpinBox_28.setValue(proceso[0][45])
+        self.doubleSpinBox_29.setValue(proceso[0][46])
+        self.doubleSpinBox_30.setValue(proceso[0][47])
+        self.doubleSpinBox_31.setValue(proceso[0][48])
+        self.doubleSpinBox_32.setValue(proceso[0][49])
+
+        hour_12 = self.get_minute(proceso[0][50])
+        self.timeEdit_12.setTime(QTime(int(hour_12[0]), int(hour_12[1])))
+
+        self.doubleSpinBox_33.setValue(proceso[0][51])
+
+        hour_13 = self.get_hour(proceso[0][52])
+        self.timeEdit_25.setTime(QTime(int(hour_13[0]), int(hour_13[1])))
+
+        hour_14 = self.get_minute(proceso[0][53])
+        self.timeEdit_13.setTime(QTime(int(hour_14[0]), int(hour_14[1])))
+        ######################
+
+        self.doubleSpinBox_34.setValue(proceso[0][54])
+        self.doubleSpinBox_35.setValue(proceso[0][55])
+        self.doubleSpinBox_36.setValue(proceso[0][56])
+        self.doubleSpinBox_37.setValue(proceso[0][57])
+
+        hour_15 = self.get_minute(proceso[0][58])
+        self.timeEdit_14.setTime(QTime(int(hour_15[0]), int(hour_15[1])))
+
+        self.doubleSpinBox_38.setValue(proceso[0][59])
+        self.doubleSpinBox_39.setValue(proceso[0][60])
+
+        hour_16 = self.get_hour(proceso[0][61])
+        self.timeEdit_26.setTime(QTime(int(hour_16[0]), int(hour_16[1])))
+
+        hour_17 = self.get_minute(proceso[0][62])
+        self.timeEdit_15.setTime(QTime(int(hour_17[0]), int(hour_17[1])))
+        ############################
+
+        self.nombre_line_edit_357.setText(str(proceso[0][63]))
+        self.nombre_line_edit_143.setText(str(proceso[0][64]))
+
+
+        self.doubleSpinBox_40.setValue(proceso[0][65])
+        self.doubleSpinBox_41.setValue(proceso[0][66])
+        self.doubleSpinBox_42.setValue(proceso[0][67])
+        self.doubleSpinBox_43.setValue(proceso[0][68])
+        self.doubleSpinBox_44.setValue(proceso[0][69])
+
+        hour_18 = self.get_minute(proceso[0][70])
+        self.timeEdit_16.setTime(QTime(int(hour_18[0]), int(hour_18[1])))
+
+        self.doubleSpinBox_45.setValue(proceso[0][71])
+        self.doubleSpinBox_46.setValue(proceso[0][72])
+
+        hour_19 = self.get_hour(proceso[0][73])
+        self.timeEdit_27.setTime(QTime(int(hour_19[0]), int(hour_19[1])))
+
+        self.doubleSpinBox_47.setValue(proceso[0][74])
+
+        hour_20 = self.get_minute(proceso[0][75])
+        self.timeEdit_17.setTime(QTime(int(hour_20[0]), int(hour_20[1])))
+
+        self.doubleSpinBox_48.setValue(proceso[0][76])
+        self.doubleSpinBox_49.setValue(proceso[0][77])
+
+        hour_21 = self.get_hour(proceso[0][78])
+        self.timeEdit_28.setTime(QTime(int(hour_21[0]), int(hour_21[1])))
+
+        hour_22 = self.get_minute(proceso[0][79])
+        self.timeEdit_18.setTime(QTime(int(hour_22[0]), int(hour_22[1])))
+        ############################
+
+
+        ############################
+
+        self.nombre_line_edit_366.setText(str(proceso[0][80]))
+        self.nombre_line_edit_164.setText(str(proceso[0][81]))
+
+
+        self.doubleSpinBox_50.setValue(proceso[0][82])
+        self.doubleSpinBox_51.setValue(proceso[0][83])
+        self.doubleSpinBox_52.setValue(proceso[0][84])
+        self.doubleSpinBox_53.setValue(proceso[0][85])
+        self.doubleSpinBox_54.setValue(proceso[0][86])
+
+        hour_18 = self.get_minute(proceso[0][87])
+        self.timeEdit_19.setTime(QTime(int(hour_18[0]), int(hour_18[1])))
+
+        self.doubleSpinBox_55.setValue(proceso[0][88])
+        self.doubleSpinBox_56.setValue(proceso[0][89])
+
+        hour_19 = self.get_hour(proceso[0][90])
+        self.timeEdit_59.setTime(QTime(int(hour_19[0]), int(hour_19[1])))
+
+        self.doubleSpinBox_57.setValue(proceso[0][91])
+
+        hour_20 = self.get_minute(proceso[0][92])
+        self.timeEdit_20.setTime(QTime(int(hour_20[0]), int(hour_20[1])))
+
+        self.doubleSpinBox_58.setValue(proceso[0][93])
+        self.doubleSpinBox_59.setValue(proceso[0][94])
+
+        hour_21 = self.get_hour(proceso[0][95])
+        self.timeEdit_29.setTime(QTime(int(hour_21[0]), int(hour_21[1])))
+
+        hour_22 = self.get_minute(proceso[0][96])
+        self.timeEdit_21.setTime(QTime(int(hour_22[0]), int(hour_22[1])))
+        ############################
+
+        self.doubleSpinBox_60.setValue(proceso[0][97])
+        self.doubleSpinBox_61.setValue(proceso[0][98])
+
+        hour_23 = self.get_hour(proceso[0][99])
+        self.timeEdit_30.setTime(QTime(int(hour_23[0]), int(hour_23[1])))
+
+        self.doubleSpinBox_64.setValue(proceso[0][100])
+        self.doubleSpinBox_65.setValue(proceso[0][101])
+
+        hour_24 = self.get_minute(proceso[0][102])
+        self.timeEdit_31.setTime(QTime(int(hour_24[0]), int(hour_24[1])))
+
+
     def get_minute(self, time):
         slc = str(time).split(':')
         #se borra el de los segundos
