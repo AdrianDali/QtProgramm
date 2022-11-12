@@ -197,71 +197,20 @@
       </widget>
      </item>
      <item>
-      <widget class="QFrame" name="action_bar_frame">
-       <property name="minimumSize">
+      <spacer name="horizontalSpacer_119">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
         <size>
-         <width>0</width>
-         <height>39</height>
+         <width>225</width>
+         <height>20</height>
         </size>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="edit_button_2">
-          <property name="minimumSize">
-           <size>
-            <width>150</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton{
-	background-color : #007BFF;
-	color: white;
-}
-QPushButton::hover {background-color : #ffc13b};</string>
-          </property>
-          <property name="text">
-           <string>Guardar Receta</string>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../../pys6-recipes-organizer/assets/icons/edit.png</normaloff>../../pys6-recipes-organizer/assets/icons/edit.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>20</width>
-            <height>20</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
+      </spacer>
      </item>
      <item>
       <widget class="QScrollArea" name="scrollArea">
@@ -290,7 +239,7 @@ QPushButton::hover {background-color : #ffc13b};</string>
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-5281</y>
+          <y>0</y>
           <width>1004</width>
           <height>6018</height>
          </rect>
@@ -2334,8 +2283,8 @@ font: 12pt &quot;Segoe UI&quot;;</string>
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>991</width>
-              <height>6011</height>
+              <width>981</width>
+              <height>5991</height>
              </rect>
             </property>
             <property name="minimumSize">
@@ -2345,7 +2294,8 @@ font: 12pt &quot;Segoe UI&quot;;</string>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true"/>
+             <string notr="true">border-color: rgb(0, 0, 0);
+border: 0px solid black;</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -2452,7 +2402,7 @@ font: 18pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>  </string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -6789,7 +6739,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Evacuation Pressure:</string>
+                   <string>Control Pressure:</string>
                   </property>
                  </widget>
                 </item>
@@ -6866,7 +6816,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Anti-cavitation Pressure:</string>
+                   <string>Control Differential:</string>
                   </property>
                  </widget>
                 </item>
@@ -6943,7 +6893,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Air Interlock Pressure:</string>
+                   <string>Dwell Time:</string>
                   </property>
                  </widget>
                 </item>
@@ -6964,7 +6914,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QDoubleSpinBox" name="doubleSpinBox_30">
+                 <widget class="QTimeEdit" name="timeEdit_34">
                   <property name="minimumSize">
                    <size>
                     <width>150</width>
@@ -6977,16 +6927,19 @@ border: 1px solid #ff6e40;
 color: black;
 font: 18pt &quot;Segoe UI&quot;;</string>
                   </property>
+                  <property name="displayFormat">
+                   <string>hh:mm</string>
+                  </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_424">
+                 <widget class="QLabel" name="label_515">
                   <property name="styleSheet">
                    <string notr="true">color: black;
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>INHGA </string>
+                   <string>HH:MM</string>
                   </property>
                  </widget>
                 </item>
@@ -7020,7 +6973,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Slow Increment Termination Pressure:</string>
+                   <string>Maximum # Makeups</string>
                   </property>
                  </widget>
                 </item>
@@ -7057,15 +7010,20 @@ font: 18pt &quot;Segoe UI&quot;;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_436">
-                  <property name="styleSheet">
-                   <string notr="true">color: black;
-font: 12pt &quot;Segoe UI&quot;;</string>
+                 <spacer name="horizontalSpacer_138">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
                   </property>
-                  <property name="text">
-                   <string>INHGA </string>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
                   </property>
-                 </widget>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>48</width>
+                    <height>48</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                </layout>
               </widget>
@@ -7097,89 +7055,12 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Pressure Increment:</string>
+                   <string>Long Exposure:</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <spacer name="horizontalSpacer_56">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Expanding</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QDoubleSpinBox" name="doubleSpinBox_32">
-                  <property name="minimumSize">
-                   <size>
-                    <width>150</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: white;
-border: 1px solid #ff6e40;
-color: black;
-font: 18pt &quot;Segoe UI&quot;;</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_427">
-                  <property name="styleSheet">
-                   <string notr="true">color: black;
-font: 12pt &quot;Segoe UI&quot;;</string>
-                  </property>
-                  <property name="text">
-                   <string>INHG    </string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_141">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_140">
-                <item>
-                 <widget class="QLabel" name="label_428">
-                  <property name="styleSheet">
-                   <string notr="true">color: black;
-font: 12pt &quot;Segoe UI&quot;;</string>
-                  </property>
-                  <property name="text">
-                   <string>66.</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_429">
-                  <property name="styleSheet">
-                   <string notr="true">color: black;
-font: 12pt &quot;Segoe UI&quot;;</string>
-                  </property>
-                  <property name="text">
-                   <string>Time Increment:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_57">
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
@@ -7214,13 +7095,93 @@ font: 18pt &quot;Segoe UI&quot;;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_430">
+                 <widget class="QLabel" name="label_517">
                   <property name="styleSheet">
                    <string notr="true">color: black;
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>MM:SS </string>
+                   <string>HH:MM</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_141">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_140">
+                <item>
+                 <widget class="QLabel" name="label_428">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>66.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_429">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Short Exposure:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_57">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QTimeEdit" name="timeEdit_35">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: white;
+border: 1px solid #ff6e40;
+color: black;
+font: 18pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="displayFormat">
+                   <string>mm:ss  </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_518">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>HH:MM</string>
                   </property>
                  </widget>
                 </item>
@@ -7254,7 +7215,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Fast Increment Tolerance</string>
+                   <string>Hi Pressure:</string>
                   </property>
                  </widget>
                 </item>
@@ -7291,13 +7252,13 @@ font: 18pt &quot;Segoe UI&quot;;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_433">
+                 <widget class="QLabel" name="label_424">
                   <property name="styleSheet">
                    <string notr="true">color: black;
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>INHG    </string>
+                   <string>INHGA</string>
                   </property>
                  </widget>
                 </item>
@@ -7331,7 +7292,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>Vacumm Hold Time:</string>
+                   <string>Lo Pressure:</string>
                   </property>
                  </widget>
                 </item>
@@ -7352,7 +7313,161 @@ font: 12pt &quot;Segoe UI&quot;;</string>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QTimeEdit" name="timeEdit_25">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_62">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: white;
+border: 1px solid #ff6e40;
+color: black;
+font: 18pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_427">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>INHGA</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_170">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_158">
+                <item>
+                 <widget class="QLabel" name="label_446">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>68.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_449">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Hi Pressure Abort:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_136">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_63">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: white;
+border: 1px solid #ff6e40;
+color: black;
+font: 18pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_430">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>INHGA</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_171">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_168">
+                <item>
+                 <widget class="QLabel" name="label_484">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>68.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_485">
+                  <property name="styleSheet">
+                   <string notr="true">color: black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Emission Control Lead Time:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_137">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QTimeEdit" name="timeEdit_33">
                   <property name="minimumSize">
                    <size>
                     <width>150</width>
@@ -7371,7 +7486,7 @@ font: 18pt &quot;Segoe UI&quot;;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_439">
+                 <widget class="QLabel" name="label_516">
                   <property name="styleSheet">
                    <string notr="true">color: black;
 font: 12pt &quot;Segoe UI&quot;;</string>
@@ -11400,6 +11515,73 @@ font: 12pt &quot;Segoe UI&quot;;</string>
          </item>
         </layout>
        </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="action_bar_frame_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>39</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="edit_button_3">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color : #007BFF;
+	color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+          </property>
+          <property name="text">
+           <string>Guardar Receta</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../pys6-recipes-organizer/assets/icons/edit.png</normaloff>../../pys6-recipes-organizer/assets/icons/edit.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </item>
     </layout>

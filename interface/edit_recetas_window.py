@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'edit_recetas_window.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.0
+## Created by: Qt User Interface Compiler version 6.3.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -31,7 +31,7 @@ class MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.content_frame = QFrame(self.centralwidget)
         self.content_frame.setObjectName(u"content_frame")
-        self.content_frame.setGeometry(QRect(10, 10, 1041, 841))
+        self.content_frame.setGeometry(QRect(10, 0, 1041, 841))
         self.content_frame.setStyleSheet(u"background-color: rgb(245, 240, 225);")
         self.content_frame.setFrameShape(QFrame.StyledPanel)
         self.content_frame.setFrameShadow(QFrame.Raised)
@@ -96,35 +96,9 @@ class MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.top_bar_frame)
 
-        self.action_bar_frame = QFrame(self.content_frame)
-        self.action_bar_frame.setObjectName(u"action_bar_frame")
-        self.action_bar_frame.setMinimumSize(QSize(0, 39))
-        self.action_bar_frame.setFrameShape(QFrame.StyledPanel)
-        self.action_bar_frame.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_2 = QHBoxLayout(self.action_bar_frame)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_118 = QSpacerItem(225, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_2.addItem(self.horizontalSpacer_3)
-
-        self.edit_button_2 = QPushButton(self.action_bar_frame)
-        self.edit_button_2.setObjectName(u"edit_button_2")
-        self.edit_button_2.setMinimumSize(QSize(150, 30))
-        self.edit_button_2.setFont(font)
-        self.edit_button_2.setStyleSheet(u"QPushButton{\n"
-"	background-color : #007BFF;\n"
-"	color: white;\n"
-"}\n"
-"QPushButton::hover {background-color : #ffc13b};")
-        icon4 = QIcon()
-        icon4.addFile(u"../../../../../pys6-recipes-organizer/assets/icons/edit.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.edit_button_2.setIcon(icon4)
-        self.edit_button_2.setIconSize(QSize(20, 20))
-
-        self.horizontalLayout_2.addWidget(self.edit_button_2)
-
-
-        self.verticalLayout_4.addWidget(self.action_bar_frame)
+        self.verticalLayout_4.addItem(self.horizontalSpacer_118)
 
         self.comboBox = QComboBox(self.content_frame)
         self.comboBox.setObjectName(u"comboBox")
@@ -150,9 +124,13 @@ class MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1004, 6018))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -2956, 1004, 6044))
         self.verticalLayout_3 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalSpacer_119 = QSpacerItem(225, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.verticalLayout_3.addItem(self.horizontalSpacer_119)
+
         self.frame_3 = QFrame(self.scrollAreaWidgetContents_3)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setEnabled(True)
@@ -1279,6 +1257,10 @@ class MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.label_243)
 
+        self.horizontalSpacer_113 = QSpacerItem(225, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.verticalLayout_6.addItem(self.horizontalSpacer_113)
+
         self.frame_80 = QFrame(self.frame_34)
         self.frame_80.setObjectName(u"frame_80")
         self.frame_80.setFrameShape(QFrame.StyledPanel)
@@ -1314,12 +1296,9 @@ class MainWindow(object):
 
         self.horizontalLayout_79.addWidget(self.nombre_line_edit_43)
 
-        self.label_239 = QLabel(self.frame_80)
-        self.label_239.setObjectName(u"label_239")
-        self.label_239.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_120 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_79.addWidget(self.label_239)
+        self.horizontalLayout_79.addItem(self.horizontalSpacer_120)
 
 
         self.verticalLayout_6.addWidget(self.frame_80)
@@ -1360,12 +1339,9 @@ class MainWindow(object):
 
         self.horizontalLayout_83.addWidget(self.spinBox)
 
-        self.label_252 = QLabel(self.frame_84)
-        self.label_252.setObjectName(u"label_252")
-        self.label_252.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_121 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_83.addWidget(self.label_252)
+        self.horizontalLayout_83.addItem(self.horizontalSpacer_121)
 
 
         self.verticalLayout_6.addWidget(self.frame_84)
@@ -1404,12 +1380,9 @@ class MainWindow(object):
 
         self.horizontalLayout_80.addWidget(self.spinBox_2)
 
-        self.label_242 = QLabel(self.frame_81)
-        self.label_242.setObjectName(u"label_242")
-        self.label_242.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_122 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_80.addWidget(self.label_242)
+        self.horizontalLayout_80.addItem(self.horizontalSpacer_122)
 
 
         self.verticalLayout_6.addWidget(self.frame_81)
@@ -1448,12 +1421,9 @@ class MainWindow(object):
 
         self.horizontalLayout_81.addWidget(self.spinBox_3)
 
-        self.label_246 = QLabel(self.frame_82)
-        self.label_246.setObjectName(u"label_246")
-        self.label_246.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_123 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_81.addWidget(self.label_246)
+        self.horizontalLayout_81.addItem(self.horizontalSpacer_123)
 
 
         self.verticalLayout_6.addWidget(self.frame_82)
@@ -1492,12 +1462,9 @@ class MainWindow(object):
 
         self.horizontalLayout_82.addWidget(self.spinBox_4)
 
-        self.label_249 = QLabel(self.frame_83)
-        self.label_249.setObjectName(u"label_249")
-        self.label_249.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_124 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_82.addWidget(self.label_249)
+        self.horizontalLayout_82.addItem(self.horizontalSpacer_124)
 
 
         self.verticalLayout_6.addWidget(self.frame_83)
@@ -1536,12 +1503,9 @@ class MainWindow(object):
 
         self.horizontalLayout_84.addWidget(self.spinBox_5)
 
-        self.label_255 = QLabel(self.frame_85)
-        self.label_255.setObjectName(u"label_255")
-        self.label_255.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_125 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_84.addWidget(self.label_255)
+        self.horizontalLayout_84.addItem(self.horizontalSpacer_125)
 
 
         self.verticalLayout_6.addWidget(self.frame_85)
@@ -1580,12 +1544,9 @@ class MainWindow(object):
 
         self.horizontalLayout_85.addWidget(self.spinBox_6)
 
-        self.label_258 = QLabel(self.frame_86)
-        self.label_258.setObjectName(u"label_258")
-        self.label_258.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_126 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_85.addWidget(self.label_258)
+        self.horizontalLayout_85.addItem(self.horizontalSpacer_126)
 
 
         self.verticalLayout_6.addWidget(self.frame_86)
@@ -1624,12 +1585,9 @@ class MainWindow(object):
 
         self.horizontalLayout_86.addWidget(self.spinBox_7)
 
-        self.label_261 = QLabel(self.frame_87)
-        self.label_261.setObjectName(u"label_261")
-        self.label_261.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_127 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_86.addWidget(self.label_261)
+        self.horizontalLayout_86.addItem(self.horizontalSpacer_127)
 
 
         self.verticalLayout_6.addWidget(self.frame_87)
@@ -1668,12 +1626,9 @@ class MainWindow(object):
 
         self.horizontalLayout_87.addWidget(self.spinBox_8)
 
-        self.label_264 = QLabel(self.frame_88)
-        self.label_264.setObjectName(u"label_264")
-        self.label_264.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_128 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_87.addWidget(self.label_264)
+        self.horizontalLayout_87.addItem(self.horizontalSpacer_128)
 
 
         self.verticalLayout_6.addWidget(self.frame_88)
@@ -2230,12 +2185,9 @@ class MainWindow(object):
 
         self.horizontalLayout_45.addWidget(self.nombre_line_edit_42)
 
-        self.label_133 = QLabel(self.frame_46)
-        self.label_133.setObjectName(u"label_133")
-        self.label_133.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_129 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_45.addWidget(self.label_133)
+        self.horizontalLayout_45.addItem(self.horizontalSpacer_129)
 
 
         self.verticalLayout_6.addWidget(self.frame_46)
@@ -2814,12 +2766,9 @@ class MainWindow(object):
 
         self.horizontalLayout_58.addWidget(self.nombre_line_edit_55)
 
-        self.label_173 = QLabel(self.frame_59)
-        self.label_173.setObjectName(u"label_173")
-        self.label_173.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_130 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_58.addWidget(self.label_173)
+        self.horizontalLayout_58.addItem(self.horizontalSpacer_130)
 
 
         self.verticalLayout_6.addWidget(self.frame_59)
@@ -3134,12 +3083,9 @@ class MainWindow(object):
 
         self.horizontalLayout_65.addWidget(self.nombre_line_edit_62)
 
-        self.label_195 = QLabel(self.frame_66)
-        self.label_195.setObjectName(u"label_195")
-        self.label_195.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_131 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_65.addWidget(self.label_195)
+        self.horizontalLayout_65.addItem(self.horizontalSpacer_131)
 
 
         self.verticalLayout_6.addWidget(self.frame_66)
@@ -3851,22 +3797,22 @@ class MainWindow(object):
 
         self.horizontalLayout_138.addItem(self.horizontalSpacer_54)
 
-        self.doubleSpinBox_30 = QDoubleSpinBox(self.frame_139)
-        self.doubleSpinBox_30.setObjectName(u"doubleSpinBox_30")
-        self.doubleSpinBox_30.setMinimumSize(QSize(150, 30))
-        self.doubleSpinBox_30.setStyleSheet(u"background-color: white;\n"
+        self.timeEdit_34 = QTimeEdit(self.frame_139)
+        self.timeEdit_34.setObjectName(u"timeEdit_34")
+        self.timeEdit_34.setMinimumSize(QSize(150, 30))
+        self.timeEdit_34.setStyleSheet(u"background-color: white;\n"
 "border: 1px solid #ff6e40;\n"
 "color: black;\n"
 "font: 18pt \"Segoe UI\";")
 
-        self.horizontalLayout_138.addWidget(self.doubleSpinBox_30)
+        self.horizontalLayout_138.addWidget(self.timeEdit_34)
 
-        self.label_424 = QLabel(self.frame_139)
-        self.label_424.setObjectName(u"label_424")
-        self.label_424.setStyleSheet(u"color: black;\n"
+        self.label_515 = QLabel(self.frame_139)
+        self.label_515.setObjectName(u"label_515")
+        self.label_515.setStyleSheet(u"color: black;\n"
 "font: 12pt \"Segoe UI\";")
 
-        self.horizontalLayout_138.addWidget(self.label_424)
+        self.horizontalLayout_138.addWidget(self.label_515)
 
 
         self.verticalLayout_6.addWidget(self.frame_139)
@@ -3905,12 +3851,9 @@ class MainWindow(object):
 
         self.horizontalLayout_142.addWidget(self.doubleSpinBox_31)
 
-        self.label_436 = QLabel(self.frame_143)
-        self.label_436.setObjectName(u"label_436")
-        self.label_436.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_138 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_142.addWidget(self.label_436)
+        self.horizontalLayout_142.addItem(self.horizontalSpacer_138)
 
 
         self.verticalLayout_6.addWidget(self.frame_143)
@@ -3939,22 +3882,22 @@ class MainWindow(object):
 
         self.horizontalLayout_139.addItem(self.horizontalSpacer_56)
 
-        self.doubleSpinBox_32 = QDoubleSpinBox(self.frame_140)
-        self.doubleSpinBox_32.setObjectName(u"doubleSpinBox_32")
-        self.doubleSpinBox_32.setMinimumSize(QSize(150, 30))
-        self.doubleSpinBox_32.setStyleSheet(u"background-color: white;\n"
+        self.timeEdit_12 = QTimeEdit(self.frame_140)
+        self.timeEdit_12.setObjectName(u"timeEdit_12")
+        self.timeEdit_12.setMinimumSize(QSize(150, 30))
+        self.timeEdit_12.setStyleSheet(u"background-color: white;\n"
 "border: 1px solid #ff6e40;\n"
 "color: black;\n"
 "font: 18pt \"Segoe UI\";")
 
-        self.horizontalLayout_139.addWidget(self.doubleSpinBox_32)
+        self.horizontalLayout_139.addWidget(self.timeEdit_12)
 
-        self.label_427 = QLabel(self.frame_140)
-        self.label_427.setObjectName(u"label_427")
-        self.label_427.setStyleSheet(u"color: black;\n"
+        self.label_517 = QLabel(self.frame_140)
+        self.label_517.setObjectName(u"label_517")
+        self.label_517.setStyleSheet(u"color: black;\n"
 "font: 12pt \"Segoe UI\";")
 
-        self.horizontalLayout_139.addWidget(self.label_427)
+        self.horizontalLayout_139.addWidget(self.label_517)
 
 
         self.verticalLayout_6.addWidget(self.frame_140)
@@ -3983,22 +3926,22 @@ class MainWindow(object):
 
         self.horizontalLayout_140.addItem(self.horizontalSpacer_57)
 
-        self.timeEdit_12 = QTimeEdit(self.frame_141)
-        self.timeEdit_12.setObjectName(u"timeEdit_12")
-        self.timeEdit_12.setMinimumSize(QSize(150, 30))
-        self.timeEdit_12.setStyleSheet(u"background-color: white;\n"
+        self.timeEdit_35 = QTimeEdit(self.frame_141)
+        self.timeEdit_35.setObjectName(u"timeEdit_35")
+        self.timeEdit_35.setMinimumSize(QSize(150, 30))
+        self.timeEdit_35.setStyleSheet(u"background-color: white;\n"
 "border: 1px solid #ff6e40;\n"
 "color: black;\n"
 "font: 18pt \"Segoe UI\";")
 
-        self.horizontalLayout_140.addWidget(self.timeEdit_12)
+        self.horizontalLayout_140.addWidget(self.timeEdit_35)
 
-        self.label_430 = QLabel(self.frame_141)
-        self.label_430.setObjectName(u"label_430")
-        self.label_430.setStyleSheet(u"color: black;\n"
+        self.label_516 = QLabel(self.frame_141)
+        self.label_516.setObjectName(u"label_516")
+        self.label_516.setStyleSheet(u"color: black;\n"
 "font: 12pt \"Segoe UI\";")
 
-        self.horizontalLayout_140.addWidget(self.label_430)
+        self.horizontalLayout_140.addWidget(self.label_516)
 
 
         self.verticalLayout_6.addWidget(self.frame_141)
@@ -4037,12 +3980,12 @@ class MainWindow(object):
 
         self.horizontalLayout_141.addWidget(self.doubleSpinBox_33)
 
-        self.label_433 = QLabel(self.frame_142)
-        self.label_433.setObjectName(u"label_433")
-        self.label_433.setStyleSheet(u"color: black;\n"
+        self.label_424 = QLabel(self.frame_142)
+        self.label_424.setObjectName(u"label_424")
+        self.label_424.setStyleSheet(u"color: black;\n"
 "font: 12pt \"Segoe UI\";")
 
-        self.horizontalLayout_141.addWidget(self.label_433)
+        self.horizontalLayout_141.addWidget(self.label_424)
 
 
         self.verticalLayout_6.addWidget(self.frame_142)
@@ -4071,25 +4014,113 @@ class MainWindow(object):
 
         self.horizontalLayout_143.addItem(self.horizontalSpacer_59)
 
-        self.timeEdit_25 = QTimeEdit(self.frame_144)
-        self.timeEdit_25.setObjectName(u"timeEdit_25")
-        self.timeEdit_25.setMinimumSize(QSize(150, 30))
-        self.timeEdit_25.setStyleSheet(u"background-color: white;\n"
+        self.doubleSpinBox_62 = QDoubleSpinBox(self.frame_144)
+        self.doubleSpinBox_62.setObjectName(u"doubleSpinBox_62")
+        self.doubleSpinBox_62.setMinimumSize(QSize(150, 30))
+        self.doubleSpinBox_62.setStyleSheet(u"background-color: white;\n"
 "border: 1px solid #ff6e40;\n"
 "color: black;\n"
 "font: 18pt \"Segoe UI\";")
 
-        self.horizontalLayout_143.addWidget(self.timeEdit_25)
+        self.horizontalLayout_143.addWidget(self.doubleSpinBox_62)
 
-        self.label_439 = QLabel(self.frame_144)
-        self.label_439.setObjectName(u"label_439")
-        self.label_439.setStyleSheet(u"color: black;\n"
+        self.label_427 = QLabel(self.frame_144)
+        self.label_427.setObjectName(u"label_427")
+        self.label_427.setStyleSheet(u"color: black;\n"
 "font: 12pt \"Segoe UI\";")
 
-        self.horizontalLayout_143.addWidget(self.label_439)
+        self.horizontalLayout_143.addWidget(self.label_427)
 
 
         self.verticalLayout_6.addWidget(self.frame_144)
+
+        self.frame_170 = QFrame(self.frame_34)
+        self.frame_170.setObjectName(u"frame_170")
+        self.frame_170.setFrameShape(QFrame.StyledPanel)
+        self.frame_170.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_158 = QHBoxLayout(self.frame_170)
+        self.horizontalLayout_158.setObjectName(u"horizontalLayout_158")
+        self.label_446 = QLabel(self.frame_170)
+        self.label_446.setObjectName(u"label_446")
+        self.label_446.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_158.addWidget(self.label_446)
+
+        self.label_449 = QLabel(self.frame_170)
+        self.label_449.setObjectName(u"label_449")
+        self.label_449.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_158.addWidget(self.label_449)
+
+        self.horizontalSpacer_136 = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_158.addItem(self.horizontalSpacer_136)
+
+        self.doubleSpinBox_63 = QDoubleSpinBox(self.frame_170)
+        self.doubleSpinBox_63.setObjectName(u"doubleSpinBox_63")
+        self.doubleSpinBox_63.setMinimumSize(QSize(150, 30))
+        self.doubleSpinBox_63.setStyleSheet(u"background-color: white;\n"
+"border: 1px solid #ff6e40;\n"
+"color: black;\n"
+"font: 18pt \"Segoe UI\";")
+
+        self.horizontalLayout_158.addWidget(self.doubleSpinBox_63)
+
+        self.label_430 = QLabel(self.frame_170)
+        self.label_430.setObjectName(u"label_430")
+        self.label_430.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_158.addWidget(self.label_430)
+
+
+        self.verticalLayout_6.addWidget(self.frame_170)
+
+        self.frame_171 = QFrame(self.frame_34)
+        self.frame_171.setObjectName(u"frame_171")
+        self.frame_171.setFrameShape(QFrame.StyledPanel)
+        self.frame_171.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_168 = QHBoxLayout(self.frame_171)
+        self.horizontalLayout_168.setObjectName(u"horizontalLayout_168")
+        self.label_484 = QLabel(self.frame_171)
+        self.label_484.setObjectName(u"label_484")
+        self.label_484.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_168.addWidget(self.label_484)
+
+        self.label_485 = QLabel(self.frame_171)
+        self.label_485.setObjectName(u"label_485")
+        self.label_485.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_168.addWidget(self.label_485)
+
+        self.horizontalSpacer_137 = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_168.addItem(self.horizontalSpacer_137)
+
+        self.timeEdit_33 = QTimeEdit(self.frame_171)
+        self.timeEdit_33.setObjectName(u"timeEdit_33")
+        self.timeEdit_33.setMinimumSize(QSize(150, 30))
+        self.timeEdit_33.setStyleSheet(u"background-color: white;\n"
+"border: 1px solid #ff6e40;\n"
+"color: black;\n"
+"font: 18pt \"Segoe UI\";")
+
+        self.horizontalLayout_168.addWidget(self.timeEdit_33)
+
+        self.label_513 = QLabel(self.frame_171)
+        self.label_513.setObjectName(u"label_513")
+        self.label_513.setStyleSheet(u"color: black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_168.addWidget(self.label_513)
+
+
+        self.verticalLayout_6.addWidget(self.frame_171)
 
         self.frame_145 = QFrame(self.frame_34)
         self.frame_145.setObjectName(u"frame_145")
@@ -4588,12 +4619,9 @@ class MainWindow(object):
 
         self.horizontalLayout_360.addWidget(self.nombre_line_edit_357)
 
-        self.label_1142 = QLabel(self.frame_337)
-        self.label_1142.setObjectName(u"label_1142")
-        self.label_1142.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_132 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_360.addWidget(self.label_1142)
+        self.horizontalLayout_360.addItem(self.horizontalSpacer_132)
 
 
         self.verticalLayout_6.addWidget(self.frame_337)
@@ -4633,12 +4661,9 @@ class MainWindow(object):
 
         self.horizontalLayout_146.addWidget(self.nombre_line_edit_143)
 
-        self.label_1141 = QLabel(self.frame_147)
-        self.label_1141.setObjectName(u"label_1141")
-        self.label_1141.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_133 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_146.addWidget(self.label_1141)
+        self.horizontalLayout_146.addItem(self.horizontalSpacer_133)
 
 
         self.verticalLayout_6.addWidget(self.frame_147)
@@ -5349,12 +5374,9 @@ class MainWindow(object):
 
         self.horizontalLayout_369.addWidget(self.nombre_line_edit_366)
 
-        self.label_1140 = QLabel(self.frame_340)
-        self.label_1140.setObjectName(u"label_1140")
-        self.label_1140.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_134 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_369.addWidget(self.label_1140)
+        self.horizontalLayout_369.addItem(self.horizontalSpacer_134)
 
 
         self.verticalLayout_6.addWidget(self.frame_340)
@@ -5394,12 +5416,9 @@ class MainWindow(object):
 
         self.horizontalLayout_167.addWidget(self.nombre_line_edit_164)
 
-        self.label_513 = QLabel(self.frame_166)
-        self.label_513.setObjectName(u"label_513")
-        self.label_513.setStyleSheet(u"color: black;\n"
-"font: 12pt \"Segoe UI\";")
+        self.horizontalSpacer_135 = QSpacerItem(48, 48, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
-        self.horizontalLayout_167.addWidget(self.label_513)
+        self.horizontalLayout_167.addItem(self.horizontalSpacer_135)
 
 
         self.verticalLayout_6.addWidget(self.frame_166)
@@ -6346,6 +6365,36 @@ class MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.scrollArea)
 
+        self.action_bar_frame = QFrame(self.content_frame)
+        self.action_bar_frame.setObjectName(u"action_bar_frame")
+        self.action_bar_frame.setMinimumSize(QSize(0, 39))
+        self.action_bar_frame.setFrameShape(QFrame.StyledPanel)
+        self.action_bar_frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.action_bar_frame)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_3)
+
+        self.edit_button_2 = QPushButton(self.action_bar_frame)
+        self.edit_button_2.setObjectName(u"edit_button_2")
+        self.edit_button_2.setMinimumSize(QSize(150, 30))
+        self.edit_button_2.setFont(font)
+        self.edit_button_2.setStyleSheet(u"QPushButton{\n"
+"	background-color : #007BFF;\n"
+"	color: white;\n"
+"}\n"
+"QPushButton::hover {background-color : #ffc13b};")
+        icon4 = QIcon()
+        icon4.addFile(u"../../../../../pys6-recipes-organizer/assets/icons/edit.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.edit_button_2.setIcon(icon4)
+        self.edit_button_2.setIconSize(QSize(20, 20))
+
+        self.horizontalLayout_2.addWidget(self.edit_button_2)
+
+
+        self.verticalLayout_4.addWidget(self.action_bar_frame)
+
         #MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -6360,7 +6409,6 @@ class MainWindow(object):
         self.restore_button.setText("")
         self.maximize_button.setText("")
         self.close_button.setText("")
-        self.edit_button_2.setText(QCoreApplication.translate("MainWindow", u"Guardar Receta", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"16. ", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Evacuation Pressure:", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
@@ -6457,31 +6505,22 @@ class MainWindow(object):
         self.label_243.setText(QCoreApplication.translate("MainWindow", u"RECIPE", None))
         self.label_237.setText(QCoreApplication.translate("MainWindow", u"7.", None))
         self.label_238.setText(QCoreApplication.translate("MainWindow", u"Nombre:", None))
-        self.label_239.setText("")
         self.label_250.setText(QCoreApplication.translate("MainWindow", u"8.", None))
         self.label_251.setText(QCoreApplication.translate("MainWindow", u"Sterilant Selection:", None))
-        self.label_252.setText("")
         self.label_240.setText(QCoreApplication.translate("MainWindow", u"9.", None))
         self.label_241.setText(QCoreApplication.translate("MainWindow", u"Temperature Setpoint:", None))
-        self.label_242.setText("")
         self.label_244.setText(QCoreApplication.translate("MainWindow", u"10.", None))
         self.label_245.setText(QCoreApplication.translate("MainWindow", u"Jacket Differential Offset:", None))
-        self.label_246.setText("")
         self.label_247.setText(QCoreApplication.translate("MainWindow", u"11.", None))
         self.label_248.setText(QCoreApplication.translate("MainWindow", u"Maximum Temperature:", None))
-        self.label_249.setText("")
         self.label_253.setText(QCoreApplication.translate("MainWindow", u"12.", None))
         self.label_254.setText(QCoreApplication.translate("MainWindow", u"Hi Temperature Tolerance:", None))
-        self.label_255.setText("")
         self.label_256.setText(QCoreApplication.translate("MainWindow", u"13.", None))
         self.label_257.setText(QCoreApplication.translate("MainWindow", u"Lo Temperature Tolerance:", None))
-        self.label_258.setText("")
         self.label_259.setText(QCoreApplication.translate("MainWindow", u"14.", None))
         self.label_260.setText(QCoreApplication.translate("MainWindow", u"Cycle Start Temperature Tolerance:", None))
-        self.label_261.setText("")
         self.label_262.setText(QCoreApplication.translate("MainWindow", u"15. ", None))
         self.label_263.setText(QCoreApplication.translate("MainWindow", u"Pressure Units:", None))
-        self.label_264.setText("")
         self.label_119.setText(QCoreApplication.translate("MainWindow", u"VACCUM", None))
         self.label_95.setText(QCoreApplication.translate("MainWindow", u"16. ", None))
         self.label_96.setText(QCoreApplication.translate("MainWindow", u"Evacuation Pressure:", None))
@@ -6524,7 +6563,6 @@ class MainWindow(object):
         self.label_130.setText(QCoreApplication.translate("MainWindow", u"INTER DILUTION ", None))
         self.label_131.setText(QCoreApplication.translate("MainWindow", u"27.", None))
         self.label_132.setText(QCoreApplication.translate("MainWindow", u"# Of Dilution Cycles:", None))
-        self.label_133.setText("")
         self.label_134.setText(QCoreApplication.translate("MainWindow", u"28.", None))
         self.label_135.setText(QCoreApplication.translate("MainWindow", u"Inert Gas Pressure:", None))
         self.label_136.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
@@ -6567,7 +6605,6 @@ class MainWindow(object):
         self.label_170.setText(QCoreApplication.translate("MainWindow", u"HUMIDIFICATION", None))
         self.label_171.setText(QCoreApplication.translate("MainWindow", u"40.", None))
         self.label_172.setText(QCoreApplication.translate("MainWindow", u"Type:", None))
-        self.label_173.setText("")
         self.label_174.setText(QCoreApplication.translate("MainWindow", u"41.", None))
         self.label_175.setText(QCoreApplication.translate("MainWindow", u"Pressure Rise:", None))
         self.label_176.setText(QCoreApplication.translate("MainWindow", u"INHG   ", None))
@@ -6592,7 +6629,6 @@ class MainWindow(object):
         self.label_192.setText(QCoreApplication.translate("MainWindow", u"HUMIDIFICATION DWELL", None))
         self.label_193.setText(QCoreApplication.translate("MainWindow", u"47.", None))
         self.label_194.setText(QCoreApplication.translate("MainWindow", u"Type:", None))
-        self.label_195.setText("")
         self.label_196.setText(QCoreApplication.translate("MainWindow", u"48.", None))
         self.label_197.setText(QCoreApplication.translate("MainWindow", u"Control Pressure:", None))
         self.label_198.setText(QCoreApplication.translate("MainWindow", u"INHGA ", None))
@@ -6639,31 +6675,38 @@ class MainWindow(object):
         self.label_235.setText(QCoreApplication.translate("MainWindow", u"LBS      ", None))
         self.label_236.setText(QCoreApplication.translate("MainWindow", u"GAS DWELL", None))
         self.label_416.setText(QCoreApplication.translate("MainWindow", u"61.", None))
-        self.label_417.setText(QCoreApplication.translate("MainWindow", u"Evacuation Pressure:", None))
+        self.label_417.setText(QCoreApplication.translate("MainWindow", u"Control Pressure:", None))
         self.label_418.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
         self.label_419.setText(QCoreApplication.translate("MainWindow", u"62.", None))
-        self.label_420.setText(QCoreApplication.translate("MainWindow", u"Anti-cavitation Pressure:", None))
+        self.label_420.setText(QCoreApplication.translate("MainWindow", u"Control Differential:", None))
         self.label_421.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
         self.label_422.setText(QCoreApplication.translate("MainWindow", u"63.", None))
-        self.label_423.setText(QCoreApplication.translate("MainWindow", u"Air Interlock Pressure:", None))
-        self.label_424.setText(QCoreApplication.translate("MainWindow", u"INHGA ", None))
+        self.label_423.setText(QCoreApplication.translate("MainWindow", u"Dwell Time:", None))
+        self.timeEdit_34.setDisplayFormat(QCoreApplication.translate("MainWindow", u"hh:mm", None))
+        self.label_515.setText(QCoreApplication.translate("MainWindow", u"HH:MM", None))
         self.label_434.setText(QCoreApplication.translate("MainWindow", u"64.", None))
-        self.label_435.setText(QCoreApplication.translate("MainWindow", u"Slow Increment Termination Pressure:", None))
-        self.label_436.setText(QCoreApplication.translate("MainWindow", u"INHGA ", None))
+        self.label_435.setText(QCoreApplication.translate("MainWindow", u"Maximum # Makeups", None))
         self.label_425.setText(QCoreApplication.translate("MainWindow", u"65.", None))
-        self.label_426.setText(QCoreApplication.translate("MainWindow", u"Pressure Increment:", None))
-        self.label_427.setText(QCoreApplication.translate("MainWindow", u"INHG    ", None))
-        self.label_428.setText(QCoreApplication.translate("MainWindow", u"66.", None))
-        self.label_429.setText(QCoreApplication.translate("MainWindow", u"Time Increment:", None))
+        self.label_426.setText(QCoreApplication.translate("MainWindow", u"Long Exposure:", None))
         self.timeEdit_12.setDisplayFormat(QCoreApplication.translate("MainWindow", u"mm:ss  ", None))
-        self.label_430.setText(QCoreApplication.translate("MainWindow", u"MM:SS ", None))
+        self.label_517.setText(QCoreApplication.translate("MainWindow", u"HH:MM", None))
+        self.label_428.setText(QCoreApplication.translate("MainWindow", u"66.", None))
+        self.label_429.setText(QCoreApplication.translate("MainWindow", u"Short Exposure:", None))
+        self.timeEdit_35.setDisplayFormat(QCoreApplication.translate("MainWindow", u"mm:ss  ", None))
+        self.label_516.setText(QCoreApplication.translate("MainWindow", u"HH:MM", None))
         self.label_431.setText(QCoreApplication.translate("MainWindow", u"67.", None))
-        self.label_432.setText(QCoreApplication.translate("MainWindow", u"Fast Increment Tolerance", None))
-        self.label_433.setText(QCoreApplication.translate("MainWindow", u"INHG    ", None))
+        self.label_432.setText(QCoreApplication.translate("MainWindow", u"Hi Pressure:", None))
+        self.label_424.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
         self.label_437.setText(QCoreApplication.translate("MainWindow", u"68.", None))
-        self.label_438.setText(QCoreApplication.translate("MainWindow", u"Vacumm Hold Time:", None))
-        self.timeEdit_25.setDisplayFormat(QCoreApplication.translate("MainWindow", u"hh:mm", None))
-        self.label_439.setText(QCoreApplication.translate("MainWindow", u"HH:MM", None))
+        self.label_438.setText(QCoreApplication.translate("MainWindow", u"Lo Pressure:", None))
+        self.label_427.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
+        self.label_446.setText(QCoreApplication.translate("MainWindow", u"68.", None))
+        self.label_449.setText(QCoreApplication.translate("MainWindow", u"Hi Pressure Abort:", None))
+        self.label_430.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
+        self.label_484.setText(QCoreApplication.translate("MainWindow", u"68.", None))
+        self.label_485.setText(QCoreApplication.translate("MainWindow", u"Emission Control Lead Time:", None))
+        self.timeEdit_33.setDisplayFormat(QCoreApplication.translate("MainWindow", u"hh:mm", None))
+        self.label_513.setText(QCoreApplication.translate("MainWindow", u"HH:MM", None))
         self.label_440.setText(QCoreApplication.translate("MainWindow", u"69.", None))
         self.label_441.setText(QCoreApplication.translate("MainWindow", u"Print Interval:", None))
         self.timeEdit_13.setDisplayFormat(QCoreApplication.translate("MainWindow", u"mm:ss  ", None))
@@ -6702,10 +6745,8 @@ class MainWindow(object):
         self.label_443.setText(QCoreApplication.translate("MainWindow", u"GAS WASH A ", None))
         self.label_1109.setText(QCoreApplication.translate("MainWindow", u"79.", None))
         self.label_1110.setText(QCoreApplication.translate("MainWindow", u"#Of Wash Cycles:", None))
-        self.label_1142.setText("")
         self.label_447.setText(QCoreApplication.translate("MainWindow", u"80.", None))
         self.label_448.setText(QCoreApplication.translate("MainWindow", u"Release Type:", None))
-        self.label_1141.setText("")
         self.label_450.setText(QCoreApplication.translate("MainWindow", u"81.", None))
         self.label_451.setText(QCoreApplication.translate("MainWindow", u"Release Pressure:", None))
         self.label_452.setText(QCoreApplication.translate("MainWindow", u"INHGA", None))
@@ -6759,10 +6800,8 @@ class MainWindow(object):
         self.label_504.setText(QCoreApplication.translate("MainWindow", u"GAS WASH B ", None))
         self.label_1115.setText(QCoreApplication.translate("MainWindow", u"96.", None))
         self.label_1139.setText(QCoreApplication.translate("MainWindow", u"#Of Wash Cycles:", None))
-        self.label_1140.setText("")
         self.label_511.setText(QCoreApplication.translate("MainWindow", u"97.", None))
         self.label_512.setText(QCoreApplication.translate("MainWindow", u"Release Type:", None))
-        self.label_513.setText("")
         self.label_477.setText(QCoreApplication.translate("MainWindow", u"98.", None))
         self.label_478.setText(QCoreApplication.translate("MainWindow", u"Release Pressure:", None))
         self.label_479.setText(QCoreApplication.translate("MainWindow", u"INHGA ", None))
@@ -6834,5 +6873,6 @@ class MainWindow(object):
         self.label_1152.setText(QCoreApplication.translate("MainWindow", u"Print Interval:", None))
         self.timeEdit_31.setDisplayFormat(QCoreApplication.translate("MainWindow", u"mm:ss  ", None))
         self.label_1153.setText(QCoreApplication.translate("MainWindow", u"MM:SS  ", None))
+        self.edit_button_2.setText(QCoreApplication.translate("MainWindow", u"Guardar Receta", None))
     # retranslateUi
 

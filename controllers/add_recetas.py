@@ -8,7 +8,7 @@ class MainWindowForm(QWidget, MainWindow):
         super().__init__()
         self.setupUi(self)
         self.ui = GeneralCustomUi(self)
-        self.edit_button_2.clicked.connect(self.edit_button_2_clicked)
+        #self.edit_button_2.clicked.connect(self.edit_button_2_clicked)
 
     def edit_button_2_clicked(self):
 

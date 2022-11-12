@@ -4,7 +4,7 @@ from interface.general_custom_ui import GeneralCustomUi
 from controllers.add_recetas import MainWindowForm as AddRecetas 
 from controllers.edit_recetas import MainWindowForm as EditRecetas 
 
-#from database.proceso import DBProceso
+from database.proceso import DBProceso
 class MainWindowForm(QWidget, DetailWindow):
     
     def __init__(self):
@@ -60,7 +60,8 @@ class MainWindowForm(QWidget, DetailWindow):
 
     #LE MANDAMOS LOS DATOS A LA TABLA QUE VIENEN DESDE LA BASE DE DATOS
     def set_table_data(self):
-        #data = DBProceso.select_all_name_proceso(self)
-        #self.populate_table(data)
-        pass
+        data = DBProceso.select_all_name_proceso(self)
+        data.pop(0)
+        self.populate_table(data)
+        
         
