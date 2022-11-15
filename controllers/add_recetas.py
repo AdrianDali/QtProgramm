@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QWidget
 from interface.add_edit_recetas_window import MainWindow
 from interface.general_custom_ui import GeneralCustomUi
-#from database.proceso import DBProceso
+from database.proceso import DBProceso
 class MainWindowForm(QWidget, MainWindow):
     
     def __init__(self):
@@ -114,15 +114,29 @@ class MainWindowForm(QWidget, MainWindow):
         g_print_interval = self.timeEdit_11.text(); # 44 is the index of the spin box
         g_gas_by_weight = self.nombre_line_edit_75.text(); # 45 is the index of the spin box
 
-        gd_evacuation_pressure = self.doubleSpinBox_28.value(); # 46 is the index of the spin box
-        gd_anti_cavitation_pressure = self.doubleSpinBox_29.value(); # 47 is the index of the spin box
-        gd_air_interlock_pressure = self.doubleSpinBox_30.value(); # 48 is the index of the spin box
-        gd_slow_increment_termination_pressure = self.doubleSpinBox_31.value(); # 49 is the index of the spin box
-        gd_pressure_increment = self.doubleSpinBox_32.value(); # 50 is the index of the spin box
-        gd_time_increment  = self.timeEdit_12.text(); # 51 is the index of the spin box
-        gd_fast_increment_tolerance = self.doubleSpinBox_33.value(); # 52 is the index of the spin box
-        gd_vacuum_hold_time = self.timeEdit_25.text(); # 53 is the index of the spin box
-        gd_print_interval = self.timeEdit_13.text(); # 54 is the index of the spin box
+        gd_control_pressure = self.doubleSpinBox_28.value(); # 46 is the index of the spin box
+        gd_control_differential = self.doubleSpinBox_29.value(); # 47 is the index of the spin box
+        gd_dwell_time = self.timeEdit_34.text(); # 48 is the index of the spin boxq
+        gd_maximum_makeups = self.doubleSpinBox_31.value(); # 49 is the index of the spin box
+        gd_long_exposure  = self.timeEdit_12.text(); # 50 is the index of the spin box
+        gd_short_exposure = self.timeEdit_35.text(); # 51 is the index of the spin box
+        gd_hi_pressure = self.doubleSpinBox_33.value(); # 52 is the index of the spin box
+        gd_lo_pressure = self.doubleSpinBox_62.value(); # 53 is the index of the spin box
+        gd_hi_pressure_abort =self.doubleSpinBox_63.value();  
+        gd_emission_control_lead_time = self.timeEdit_33.text(); # 54 is the index of the spin box
+        gd_print_interval = self.timeEdit_13.text(); # 55 is the index of the spin box
+
+
+
+        #gd_evacuation_pressure = self.doubleSpinBox_28.value(); # 46 is the index of the spin box
+        ##gd_anti_cavitation_pressure = self.doubleSpinBox_29.value(); # 47 is the index of the spin box
+        #gd_air_interlock_pressure = self.doubleSpinBox_30.value(); # 48 is the index of the spin box
+        #gd_slow_increment_termination_pressure = self.doubleSpinBox_31.value(); # 49 is the index of the spin box
+        #gd_pressure_increment = self.doubleSpinBox_32.value(); # 50 is the index of the spin box
+        #gd_time_increment  = self.timeEdit_12.text(); # 51 is the index of the spin box
+        #gd_fast_increment_tolerance = self.doubleSpinBox_33.value(); # 52 is the index of the spin box
+        #gd_vacuum_hold_time = self.timeEdit_25.text(); # 53 is the index of the spin box
+        #gd_print_interval = self.timeEdit_13.text(); # 54 is the index of the spin box
 
 
         a_evacuation_pressure = self.doubleSpinBox_34.value(); # 55 is the index of the spin box
@@ -180,6 +194,27 @@ class MainWindowForm(QWidget, MainWindow):
         r_slow_increment_termination_pressure = self.doubleSpinBox_65.value(); # 93 is the index of the spin box
         r_print_interval  = self.timeEdit_31.text(); # 94 is the index of the spin box
 
+        new = DBProceso(nombre = nombre, sterilant_selection= sterilant_selection , temperature_setpoint= temperature_setpoint, 
+        jacket_differential_offset= jacket_differential_offset, maximum_temperature= maximum_temperature,
+        hi_temperature_tolerance= hi_temperature_tolerance , lo_temperature_tolerance = lo_temperature_tolerance, cycles_start_temperature_tolerance= cycle_start_temperature_tolerance , 
+        pressure_units= pressure_units, v_evacuation_pressure= v_evacuation_pressure, v_anticavitation_pressure= v_anti_cavitation_pressure,
+        v_gas_interlock_pressure = v_gas_interlock_pressure , v_pressure_increment= v_pressure_increment, v_time_increment= v_time_increment, v_fast_increment_tolerance= v_fast_increment_tolerance,
+        v_slow_increment_termination_pressure = v_slow_increment_termination_pressure, v_print_interval= v_print_interval, 
+        l_leak_test_time= l_leak_test_time, l_leak_test_tolerance= l_leak_test_tolerance, l_print_interval= l_print_interval,
+        i_of_dilution_cycles= i_of_dilution_cycles, i_inert_gas_pressure= i_inert_gas_pressure, i_inert_pressure_increment= i_inert_pressure_increment,
+        i_inert_time_increment= i_inert_time_increment, i_inert_fast_increment_tolerance= i_inert_fast_increment_tolerance , i_evacuation_pressure= i_evacuation_pressure, i_vacuum_pressure_increment= i_vacuum_pressure_increment ,
+        i_vacuum_time_increment = i_vacuum_time_increment, i_vacuum_fast_increment_tolerance = i_vacuum_fast_increment_tolerance, i_vacuum_slow_increment_termination_pressure= i_vacuum_slow_increment_termination_pressure, 
+        i_anticavitation_pressure = i_anti_cavitation_pressure, i_hi_pressure = i_hi_pressure , i_print_interval = i_print_interval, 
+        h_type= h_type, h_pressure_rise= h_pressure_rise, h_pressure_increment= h_pressure_increment, h_time_increment= h_time_increment, h_fast_increment_tolerance= h_fast_increment_tolerance, h_maximum_time= h_maximum_time, h_print_interval= h_print_interval,  
+        hd_type = hd_type, hd_control_pressure = hd_control_pressure , hd_control_diferential= hd_control_differential , hd_hi_humidity= hd_hi_humidity, hd_lo_humidity= hd_lo_humidity, hd_maximum_humidity= hd_maximum_humidity , hd_dwell_time= hd_dwell_time, hd_print_interval= hd_print_interval , 
+        g_gas_pressure = g_gas_pressure, g_pressure_increment = g_pressure_increment , g_time_increment = g_time_increment , g_fast_increment_tolerance= g_fast_increment_tolerance , g_print_interval= g_print_interval, g_gas_by_weigh= g_gas_by_weight, 
+        gd_control_pressure= gd_control_pressure, gd_control_differential= gd_control_differential, gd_dwell_time= gd_dwell_time, gd_maximum_makeups= gd_maximum_makeups , gd_long_exposure= gd_long_exposure, gd_short_exposure= gd_short_exposure, gd_hi_pressure= gd_hi_pressure , gd_lo_pressure= gd_lo_pressure, gd_hi_pressure_abort= gd_hi_pressure_abort, 
+        gd_emission_control_lead_time= gd_emission_control_lead_time, gd_print_interval=gd_print_interval,
+        a_evacuation_pressure= a_evacuation_pressure, a_anticavitation_pressure=a_anti_cavitation_pressure, a_air_interlock_pressure=a_air_interlock_pressure, a_pressure_increment=a_pressure_increment, a_time_increment= a_time_increment , a_fast_increment_tolerance= a_fast_increment_tolerance , a_slow_increment_termination_pressure= a_slow_increment_termination_pressure, 
+        a_vacuum_hold_time= a_vacumm_hold_time, a_print_interval= a_print_interval,
+        gwa_of_wash_cycles= gwa_of_wash_cycles, gwa_release_type = gwa_release_type , gwa_release_type = gwa_release_type , gwa_release_pressure= gwa_release_pressure, gwa_evacuation_pressure= gwa_evacuation_pressure, gwa_anticavitation_pressure= gwa_anti_cavitation_pressure, gwa_hi_pressure= gwa_hi_pressure, gwa_release_pressure_increment= gwa_release_pressure_increment, 
+        gwa_release_time_increment= gwa_release_time_increment, gwa_fast_inc_tolerance= gwa_release_fast_increment_tolerance ,     
+         )
 
        
         #self.nombre_line_edit_31.setEnabled(True)

@@ -61,6 +61,7 @@ class MainWindowForm(QWidget, DetailWindow):
     #LE MANDAMOS LOS DATOS A LA TABLA QUE VIENEN DESDE LA BASE DE DATOS
     def set_table_data(self):
         data = DBProceso.select_all_name_proceso(self)
+        
         data.pop(0)
         self.populate_table(data)
         

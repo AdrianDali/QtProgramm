@@ -200,8 +200,6 @@ class DBProceso():
             self._gwb_print_interval,self._r_release_pressure,self._r_pressure_increment,self._r_time_increment,self._r_fast_increment_tolerance,self._r_slow_increment_termination_pressure,
             self._r_print_interval)
 
-
-
     def select_proceso(self, value):
         sql= """SELECT 
     v_evacuation_pressure,
@@ -354,6 +352,19 @@ class DBProceso():
         except Exception as e:
             print(e)
             return object_proceso
+
+    def delete_receta(self):
+        sql = "DELETE FROM esterilizadora.parametros WHERE id = {}".format(self.id)
+        try:
+            connection = create_connection()
+            cursor = connection.cursor()
+            cursor.execute(sql)
+            connection.commit()
+
+            return True
+        except Exception as e:
+            print(e)
+            return False
 
 
 #con = DBProceso()
