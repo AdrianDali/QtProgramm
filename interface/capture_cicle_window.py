@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'pre_head_window.ui'
+## Form generated from reading UI file 'capture_cicle_window.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.2
 ##
@@ -15,21 +15,21 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGraphicsView, QGridLayout,
-    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
-    QPushButton, QSizePolicy, QSpacerItem, QToolButton,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QFormLayout, QFrame,
+    QGraphicsView, QGridLayout, QHBoxLayout, QLabel,
+    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
+    QSpacerItem, QToolButton, QVBoxLayout, QWidget)
 
 class MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1363, 818)
+        MainWindow.resize(1383, 864)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.content_frame = QFrame(self.centralwidget)
         self.content_frame.setObjectName(u"content_frame")
-        self.content_frame.setGeometry(QRect(10, 10, 1341, 801))
+        self.content_frame.setGeometry(QRect(10, 10, 1361, 841))
         self.content_frame.setStyleSheet(u"background-color: rgb(255, 255, 225);")
         self.content_frame.setFrameShape(QFrame.StyledPanel)
         self.content_frame.setFrameShadow(QFrame.Raised)
@@ -391,7 +391,7 @@ class MainWindow(object):
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.frame_11 = QFrame(self.frame_4)
         self.frame_11.setObjectName(u"frame_11")
-        self.frame_11.setMinimumSize(QSize(900, 0))
+        self.frame_11.setMinimumSize(QSize(800, 0))
         self.frame_11.setStyleSheet(u"border-color: rgb(0, 0, 0);\n"
 "border: 1px solid black;")
         self.frame_11.setFrameShape(QFrame.StyledPanel)
@@ -408,14 +408,33 @@ class MainWindow(object):
 
         self.frame_10 = QFrame(self.frame_4)
         self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setMinimumSize(QSize(250, 0))
+        self.frame_10.setMinimumSize(QSize(250, 100))
         self.frame_10.setStyleSheet(u"border-color: rgb(0, 0, 0);\n"
 "border: 1px solid black;")
         self.frame_10.setFrameShape(QFrame.StyledPanel)
         self.frame_10.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_10)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.view_button_3 = QPushButton(self.frame_10)
+        self.frame_12 = QFrame(self.frame_10)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setFrameShape(QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QFrame.Raised)
+        self.formLayout_2 = QFormLayout(self.frame_12)
+        self.formLayout_2.setObjectName(u"formLayout_2")
+        self.label_22 = QLabel(self.frame_12)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setMinimumSize(QSize(50, 0))
+        self.label_22.setStyleSheet(u"border: 0px solid black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.formLayout_2.setWidget(0, QFormLayout.LabelRole, self.label_22)
+
+        self.comboBox = QComboBox(self.frame_12)
+        self.comboBox.setObjectName(u"comboBox")
+
+        self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.comboBox)
+
+        self.view_button_3 = QPushButton(self.frame_12)
         self.view_button_3.setObjectName(u"view_button_3")
         self.view_button_3.setMinimumSize(QSize(150, 30))
         self.view_button_3.setFont(font)
@@ -426,9 +445,93 @@ class MainWindow(object):
 "QPushButton::hover {background-color : #ffc13b};")
         self.view_button_3.setIconSize(QSize(20, 20))
 
-        self.verticalLayout_4.addWidget(self.view_button_3)
+        self.formLayout_2.setWidget(1, QFormLayout.FieldRole, self.view_button_3)
 
-        self.view_button_4 = QPushButton(self.frame_10)
+
+        self.verticalLayout_4.addWidget(self.frame_12)
+
+        self.frame_13 = QFrame(self.frame_10)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setFrameShape(QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.formLayout = QFormLayout(self.frame_13)
+        self.formLayout.setObjectName(u"formLayout")
+        self.label_19 = QLabel(self.frame_13)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setMinimumSize(QSize(50, 0))
+        self.label_19.setStyleSheet(u"border: 0px solid black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.formLayout.setWidget(20, QFormLayout.LabelRole, self.label_19)
+
+        self.lineEdit_10 = QLineEdit(self.frame_13)
+        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.lineEdit_10.setMinimumSize(QSize(0, 30))
+        self.lineEdit_10.setMaximumSize(QSize(250, 16777215))
+
+        self.formLayout.setWidget(20, QFormLayout.FieldRole, self.lineEdit_10)
+
+        self.label_18 = QLabel(self.frame_13)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setMinimumSize(QSize(50, 0))
+        self.label_18.setStyleSheet(u"border: 0px solid black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_18)
+
+        self.lineEdit_9 = QLineEdit(self.frame_13)
+        self.lineEdit_9.setObjectName(u"lineEdit_9")
+        self.lineEdit_9.setMinimumSize(QSize(0, 30))
+        self.lineEdit_9.setMaximumSize(QSize(250, 16777215))
+
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.lineEdit_9)
+
+        self.lineEdit_12 = QLineEdit(self.frame_13)
+        self.lineEdit_12.setObjectName(u"lineEdit_12")
+        self.lineEdit_12.setMinimumSize(QSize(0, 30))
+        self.lineEdit_12.setMaximumSize(QSize(250, 16777215))
+
+        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.lineEdit_12)
+
+        self.label_21 = QLabel(self.frame_13)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setMinimumSize(QSize(50, 0))
+        self.label_21.setStyleSheet(u"border: 0px solid black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.formLayout.setWidget(8, QFormLayout.LabelRole, self.label_21)
+
+        self.lineEdit_11 = QLineEdit(self.frame_13)
+        self.lineEdit_11.setObjectName(u"lineEdit_11")
+        self.lineEdit_11.setMinimumSize(QSize(0, 30))
+        self.lineEdit_11.setMaximumSize(QSize(250, 16777215))
+
+        self.formLayout.setWidget(14, QFormLayout.FieldRole, self.lineEdit_11)
+
+        self.label_20 = QLabel(self.frame_13)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setMinimumSize(QSize(50, 0))
+        self.label_20.setStyleSheet(u"border: 0px solid black;\n"
+"font: 12pt \"Segoe UI\";")
+
+        self.formLayout.setWidget(14, QFormLayout.LabelRole, self.label_20)
+
+
+        self.verticalLayout_4.addWidget(self.frame_13)
+
+
+        self.horizontalLayout_4.addWidget(self.frame_10)
+
+
+        self.verticalLayout_3.addWidget(self.frame_4)
+
+        self.frame_14 = QFrame(self.frame)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setFrameShape(QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_5 = QHBoxLayout(self.frame_14)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.view_button_4 = QPushButton(self.frame_14)
         self.view_button_4.setObjectName(u"view_button_4")
         self.view_button_4.setMinimumSize(QSize(150, 30))
         self.view_button_4.setFont(font)
@@ -439,26 +542,44 @@ class MainWindow(object):
 "QPushButton::hover {background-color : #ffc13b};")
         self.view_button_4.setIconSize(QSize(20, 20))
 
-        self.verticalLayout_4.addWidget(self.view_button_4)
+        self.horizontalLayout_5.addWidget(self.view_button_4)
 
-        self.view_button_5 = QPushButton(self.frame_10)
-        self.view_button_5.setObjectName(u"view_button_5")
-        self.view_button_5.setMinimumSize(QSize(150, 30))
-        self.view_button_5.setFont(font)
-        self.view_button_5.setStyleSheet(u"QPushButton{\n"
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_3)
+
+        self.view_button_2 = QPushButton(self.frame_14)
+        self.view_button_2.setObjectName(u"view_button_2")
+        self.view_button_2.setMinimumSize(QSize(150, 30))
+        self.view_button_2.setFont(font)
+        self.view_button_2.setStyleSheet(u"QPushButton{\n"
 "	background-color : #17A2B8;\n"
 "	color: white;\n"
 "}\n"
 "QPushButton::hover {background-color : #ffc13b};")
-        self.view_button_5.setIconSize(QSize(20, 20))
+        self.view_button_2.setIconSize(QSize(20, 20))
 
-        self.verticalLayout_4.addWidget(self.view_button_5)
+        self.horizontalLayout_5.addWidget(self.view_button_2)
+
+        self.horizontalSpacer_4 = QSpacerItem(25, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_4)
+
+        self.view_button = QPushButton(self.frame_14)
+        self.view_button.setObjectName(u"view_button")
+        self.view_button.setMinimumSize(QSize(150, 30))
+        self.view_button.setFont(font)
+        self.view_button.setStyleSheet(u"QPushButton{\n"
+"	background-color : #17A2B8;\n"
+"	color: white;\n"
+"}\n"
+"QPushButton::hover {background-color : #ffc13b};")
+        self.view_button.setIconSize(QSize(20, 20))
+
+        self.horizontalLayout_5.addWidget(self.view_button)
 
 
-        self.horizontalLayout_4.addWidget(self.frame_10)
-
-
-        self.verticalLayout_3.addWidget(self.frame_4)
+        self.verticalLayout_3.addWidget(self.frame_14)
 
 
         self.verticalLayout_2.addWidget(self.frame)
@@ -466,7 +587,7 @@ class MainWindow(object):
 
         self.verticalLayout.addWidget(self.frame_3)
 
-       # MainWindow.setCentralWidget(self.centralwidget)
+        #MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
 
@@ -498,8 +619,14 @@ class MainWindow(object):
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Jacket Temp:", None))
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"F.", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"F", None))
-        self.view_button_3.setText(QCoreApplication.translate("MainWindow", u"Manual Functions", None))
-        self.view_button_4.setText(QCoreApplication.translate("MainWindow", u"Graphics", None))
-        self.view_button_5.setText(QCoreApplication.translate("MainWindow", u"Cycle Capture", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Cicle", None))
+        self.view_button_3.setText(QCoreApplication.translate("MainWindow", u"Select Cicle", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Estimated remaining:", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Estimated in Required Weight :", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Tank Lot :", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Tare Weight :", None))
+        self.view_button_4.setText(QCoreApplication.translate("MainWindow", u"Cylce Information", None))
+        self.view_button_2.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.view_button.setText(QCoreApplication.translate("MainWindow", u"Data Capture", None))
     # retranslateUi
 

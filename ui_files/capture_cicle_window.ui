@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1363</width>
-    <height>818</height>
+    <width>1383</width>
+    <height>864</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>1341</width>
-      <height>801</height>
+      <width>1361</width>
+      <height>841</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -887,7 +887,7 @@ border: 1px solid black;</string>
                <widget class="QFrame" name="frame_11">
                 <property name="minimumSize">
                  <size>
-                  <width>900</width>
+                  <width>800</width>
                   <height>0</height>
                  </size>
                 </property>
@@ -913,7 +913,7 @@ border: 1px solid black;</string>
                 <property name="minimumSize">
                  <size>
                   <width>250</width>
-                  <height>0</height>
+                  <height>100</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -928,102 +928,351 @@ border: 1px solid black;</string>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
-                  <widget class="QPushButton" name="view_button_3">
-                   <property name="minimumSize">
-                    <size>
-                     <width>150</width>
-                     <height>30</height>
-                    </size>
+                  <widget class="QFrame" name="frame_12">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
                    </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>10</pointsize>
-                     <bold>true</bold>
-                    </font>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton{
+                   <layout class="QFormLayout" name="formLayout_2">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_22">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border: 0px solid black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Cicle</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox"/>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QPushButton" name="view_button_3">
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
 	background-color : #17A2B8;
 	color: white;
 }
 QPushButton::hover {background-color : #ffc13b};</string>
-                   </property>
-                   <property name="text">
-                    <string>Manual Functions</string>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>20</width>
-                     <height>20</height>
-                    </size>
-                   </property>
+                      </property>
+                      <property name="text">
+                       <string>Select Cicle</string>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>20</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="view_button_4">
-                   <property name="minimumSize">
-                    <size>
-                     <width>150</width>
-                     <height>30</height>
-                    </size>
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
                    </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>10</pointsize>
-                     <bold>true</bold>
-                    </font>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton{
-	background-color : #17A2B8;
-	color: white;
-}
-QPushButton::hover {background-color : #ffc13b};</string>
-                   </property>
-                   <property name="text">
-                    <string>Graphics</string>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>20</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QPushButton" name="view_button_5">
-                   <property name="minimumSize">
-                    <size>
-                     <width>150</width>
-                     <height>30</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>10</pointsize>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton{
-	background-color : #17A2B8;
-	color: white;
-}
-QPushButton::hover {background-color : #ffc13b};</string>
-                   </property>
-                   <property name="text">
-                    <string>Cycle Capture</string>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>20</width>
-                     <height>20</height>
-                    </size>
-                   </property>
+                   <layout class="QFormLayout" name="formLayout">
+                    <item row="20" column="0">
+                     <widget class="QLabel" name="label_19">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border: 0px solid black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Estimated remaining:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="20" column="1">
+                     <widget class="QLineEdit" name="lineEdit_10">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>250</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_18">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border: 0px solid black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Estimated in Required Weight :</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_9">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>250</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="1">
+                     <widget class="QLineEdit" name="lineEdit_12">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>250</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0">
+                     <widget class="QLabel" name="label_21">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border: 0px solid black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Tank Lot :</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="1">
+                     <widget class="QLineEdit" name="lineEdit_11">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>250</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="0">
+                     <widget class="QLabel" name="label_20">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border: 0px solid black;
+font: 12pt &quot;Segoe UI&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Tare Weight :</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_14">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QPushButton" name="view_button_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color : #17A2B8;
+	color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+                </property>
+                <property name="text">
+                 <string>Cylce Information</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="view_button_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color : #17A2B8;
+	color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+                </property>
+                <property name="text">
+                 <string>Home</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>25</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="view_button">
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color : #17A2B8;
+	color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+                </property>
+                <property name="text">
+                 <string>Data Capture</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
                </widget>
               </item>
              </layout>
