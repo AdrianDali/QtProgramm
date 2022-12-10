@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1383</width>
-    <height>864</height>
+    <height>863</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -949,7 +949,7 @@ border: 1px solid black;</string>
 font: 12pt &quot;Segoe UI&quot;;</string>
                       </property>
                       <property name="text">
-                       <string>Cicle</string>
+                       <string>Receta:</string>
                       </property>
                      </widget>
                     </item>
@@ -978,7 +978,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
 QPushButton::hover {background-color : #ffc13b};</string>
                       </property>
                       <property name="text">
-                       <string>Select Cicle</string>
+                       <string>Select Receta</string>
                       </property>
                       <property name="iconSize">
                        <size>
